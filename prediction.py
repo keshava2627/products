@@ -26,5 +26,9 @@ df.withColumn('date',trim(col('date')))\
   .withColumn('nsxg1',trim(col('nsxg1')))\
   .withColumn('nsxg2',trim(col('nsxg2')))\
   .withColumn('adj_score1',trim(col('adj_score1')))\
-  .withColumn('adj_score2',trim(col('adj_score2'))).show(vertical=True,truncate=False)
+  .withColumn('adj_score2',trim(col('adj_score2')))
+
+
+df.show(truncate=False)
+  
 
